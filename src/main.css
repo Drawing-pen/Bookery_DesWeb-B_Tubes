@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@plugin "@iconify/tailwind4";
+
+@theme{
+    --color-coklat: #514F46;
+    --color-krem: #EAE7DD;
+    --color-gray: #B6B4AC;
+
+    --font-gupter: "Gupter", serif;
+    --font-meriweter: "Merriweather", serif;
+}
