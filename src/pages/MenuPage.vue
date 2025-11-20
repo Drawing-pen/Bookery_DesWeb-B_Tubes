@@ -8,7 +8,7 @@
 
         <div class="max-w-360 mx-auto px-4 sm:px-6 md:px-10 lg:px-16 xl:px-24 pb-12">
             <div class="grid md:grid-cols-[minmax(180px,220px)_1fr] lg:grid-cols-[minmax(200px,260px)_1fr] gap-8 xl:gap-10">
-                <MenuFilterSidebar
+                <MenuFilter
                     v-model:selectedFilters="selectedFilters"
                     v-model:searchQuery="searchQuery"
                 />
@@ -33,7 +33,7 @@
 <script setup>
     import { ref } from "vue";
     import MenuCategoryBar from "../components/MenuCategoryBar.vue";
-    import MenuFilterSidebar from "../components/MenuFilterSidebar.vue";
+    import MenuFilter from "../components/MenuFilter.vue";
     import MenuCard from "../components/MenuCard.vue";
 
     const selectedCategory = ref("all");
