@@ -70,9 +70,29 @@
         </nav>
         <!-- Social Icons -->
         <div class="flex gap-3">
-            <span class="icon-[ic--baseline-tiktok] hover:scale-110 transition-transform" style="width: 30px; height: 30px; color: #eae7dd; cursor: pointer;"></span>
-            <span class="icon-[ri--instagram-fill] hover:scale-110 transition-transform" style="width: 30px; height: 30px; color: #eae7dd; cursor: pointer;"></span>
-            <span class="icon-[ri--twitter-x-line] hover:scale-110 transition-transform" style="width: 30px; height: 30px; color: #eae7dd; cursor: pointer;"></span>
+            <a
+                href="https://www.tiktok.com/en/"
+                aria-label="TikTok"
+                class="hover:scale-110 transition-transform"
+              >
+              <span class="icon-[ic--baseline-tiktok] hover:scale-110 transition-transform" style="width: 30px; height: 30px; color: #eae7dd; cursor: pointer;"></span>
+              </a>
+
+            <a
+                href="https://www.instagram.com/"
+                aria-label="Instagram"
+                class="hover:scale-110 transition-transform"
+              >
+              <span class="icon-[ri--instagram-fill] hover:scale-110 transition-transform" style="width: 30px; height: 30px; color: #eae7dd; cursor: pointer;"></span>
+              </a>
+
+            <a
+                href="https://x.com/"
+                aria-label="X"
+                class="hover:scale-110 transition-transform"
+              >
+              <span class="icon-[ri--twitter-x-line] hover:scale-110 transition-transform" style="width: 30px; height: 30px; color: #eae7dd; cursor: pointer;"></span>
+              </a>
         </div>
         </div>
         
@@ -182,3 +202,26 @@
         }
     }
 </script>
+
+<!-- Sidebar Transition -->
+<style scoped>
+  .sidebar-enter-active,
+  .sidebar-leave-active {
+    transition: opacity 0.3s ease;
+  }
+
+  .sidebar-enter-active > div,
+  .sidebar-leave-active > div {
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar-enter-from,
+  .sidebar-leave-to {
+    opacity: 0;
+  }
+
+  .sidebar-enter-from > div,
+  .sidebar-leave-to > div {
+    transform: translateX(-100%);
+  }
+</style>

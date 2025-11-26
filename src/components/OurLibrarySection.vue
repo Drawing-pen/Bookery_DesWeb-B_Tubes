@@ -28,7 +28,8 @@
                         <div
                             v-for="book in booksToShow"
                             :key="book.id"
-                            class="w-52 sm:w-60 md:w-72 bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 hover:shadow-xl transition-transform duration-300 shrink-0 p-4 sm:p-6 cursor-pointer"
+                            @click="goToBook(book.id)"
+                            class="w-52 sm:w-60 md:w-72 bg-white rounded-lg shadow-md overflow-hidden hover:scale-105 hover:shadow-xl transition-transform shrink-0 p-4 sm:p-6 cursor-pointer"
                         >
                             <div class="flex flex-col items-center">
                                 <img
@@ -85,11 +86,15 @@
 <script>
     import { ref, computed, onMounted, onUnmounted } from 'vue';
     import { books as booksData } from '../data/booksData.js';
+    import { useRouter } from 'vue-router';
 
     export default {
         setup() {
+            const router = useRouter();
             const currentSlide = ref(0);
             const booksPerPage = ref(3);
+
+            const books = booksData.slice(0,6);
 
             const updateBooksPerPage = () => {
                 if (window.innerWidth < 640) {
@@ -102,13 +107,13 @@
             };
 
             const totalSlides = computed(() =>
-                Math.ceil(booksData.length / booksPerPage.value)
+                Math.ceil(books.length / booksPerPage.value)
             );
 
             const booksToShow = computed(() => {
                 const start = currentSlide.value * booksPerPage.value;
                 const end = start + booksPerPage.value;
-                return booksData.slice(start, end);
+                return books.slice(start, end);
             });
 
             const nextSlide = () => {
@@ -123,25 +128,17 @@
                         : currentSlide.value - 1;
             };
 
-            let interval = null;
-
-            onMounted(() => {
-                updateBooksPerPage();
-                window.addEventListener('resize', updateBooksPerPage);
-                interval = setInterval(nextSlide, 5000);
-            });
-
-            onUnmounted(() => {
-                window.removeEventListener('resize', updateBooksPerPage);
-                clearInterval(interval);
-            });
+            const goToBook = (bookId) => {
+                router.push({ path: '/Library', query: { id: bookId } });
+            };
 
             return {
                 booksToShow,
                 currentSlide,
                 totalSlides,
                 nextSlide,
-                prevSlide
+                prevSlide,
+                goToBook
             };
         }
     };

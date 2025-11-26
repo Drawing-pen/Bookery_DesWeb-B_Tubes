@@ -13,7 +13,7 @@
             to="/menu"
             class="font-gupter inline-block bg-krem text-coklat px-6 md:px-8 py-2.5 md:py-3 rounded-full font-semibold hover:bg-coklat hover:text-krem hover:shadow-lg transition-all duration-300"
             >
-                Explore More
+                Explore Menu
             </router-link>
         </div>
     </section>

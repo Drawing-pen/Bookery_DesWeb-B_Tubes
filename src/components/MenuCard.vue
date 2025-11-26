@@ -65,15 +65,48 @@
     const selectedItem = ref(null);
 
     const getTagColor = (tag) => {
-        const map = {
-        coffee: "bg-yellow-400",
-        sweet: "bg-pink-400",
-        hot: "bg-red-400",
-        cold: "bg-blue-400",
-        popular: "bg-green-500",
-        healthy: "bg-emerald-500",
-        };
-        return map[tag.toLowerCase()] || "bg-gray-400";
+        switch (tag.toLowerCase()) {
+            case "sweet":
+                return "bg-[#74F2CE]";
+            case "popular":
+                return "bg-[#FF9500]";
+            case "chocolate":
+                return "bg-[#FF4081]";
+            case "matcha":
+                return "bg-[#32CD32]";
+            case "crunchy":
+                return "bg-[#FFD700]";
+            case "soft":
+                return "bg-[#FF5E57]";
+            case "fresh":
+                return "bg-[#B620E0]";
+            case "buttery":
+                return "bg-[#00E5FF]";
+            case "classic":
+                return "bg-[#39FF14]";
+            case "healthy":
+                return "bg-[#FF7F50]";
+            case "flaky":
+                return "bg-[#FFB980]";
+            case "warms":
+                return "bg-[#046307]";
+            case "tea":
+                return "bg-[#6FFFE3]";
+            case "creamy":
+                return "bg-[#D89AFF]";
+            case "cold":
+                return "bg-[#5EDFFF]";
+            case "fruity":
+                return "bg-[#E63946]";
+            case "warm":
+                return "bg-[#00C4A7]";
+            case "coffee":
+                return "bg-[#00B7FF]";
+            case "comfy":
+                return "bg-[#FF87C3]";
+            default:
+                return "bg-gray-400";
+        }
     };
 
     const filteredItems = computed(() => {

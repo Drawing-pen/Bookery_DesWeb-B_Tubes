@@ -90,18 +90,32 @@
         }
     });
 
-    const emit = defineEmits(['update:selectedFilters', 'update:searchQuery']);
+    const emit = defineEmits(["update:selectedFilters", "update:searchQuery"]);
 
-    const filters = ["Flaky", "Sweet", "Hot", "Cold", "Popular", "Healthy", "Creamy", "Chocolate", "Crunchy", "Soft"];
+    const filters = [
+        "Inspirable",
+        "Historical",
+        "Romance",
+        "Family",
+        "Slice-Of-Life",
+        "Advenure",
+        "Fantasy",
+        "Magical",
+        "Self-Help",
+        "Technology",
+        "Productivity",
+        "Psychology"
+    ];
+
     const showMobile = ref(false);
 
     const selectedFilters = computed({
         get: () => props.selectedFilters,
-        set: (value) => emit('update:selectedFilters', value)
+        set: (value) => emit("update:selectedFilters", value)
     });
 
     const searchQuery = computed({
         get: () => props.searchQuery,
-        set: (value) => emit('update:searchQuery', value)
+        set: (value) => emit("update:searchQuery", value)
     });
 </script>

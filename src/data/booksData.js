@@ -11,8 +11,8 @@ export const books = [
             "Tentang melupakan", 
             "Tentang hujan",
         ],
-        tags: ["Fiction", "Fantasy", "Romance"],
-        category: "novels"
+        tags: ["Adventure", "Fantasy", "Romance"],
+        category: "fiction"
     },
     {
         id: 2,
@@ -28,25 +28,194 @@ export const books = [
             "Asmara Jati, adik Biru Laut, beserta Tim Komisi Orang Hilang yang dipimpin Aswin Pradana mencoba mencari jejak mereka yang hilang serta merekam dan mempelajari testimoni mereka yang kembali. Anjani, kekasih Laut, para orangtua dan istri aktivis yang hilang menuntut kejelasan tentang anggota keluarga mereka. Sementara Biru Laut, dari dasar laut yang sunyi bercerita kepada kita, kepada dunia tentang apa yang terjadi pada dirinya dan kawan-kawannya.",
             "Laut Bercerita, novel terbaru Leila S. Chudori, bertutur tentang kisah keluarga yang kehilangan, sekumpulan sahabat yang merasakan kekosongan di dada, sekelompok orang yang gemar menyiksa dan lancar berkhianat, sejumlah keluarga yang mencari kejelasan akan anaknya, dan tentang cinta yang tak akan luntur."
         ],
-        tags: ["Non-Fiction", "Coffee", "Lifestyle"],
-        category: "non-fiction"
+        tags: ["Inspirable", "Family", "Historical"],
+        category: "fiction"
     },
     {
         id: 3,
         title: "The Traveling Cat Chronicles",
-        author: "Hiro Arikawa, Liticia Helmi (Translator)",
+        author: "Hiro Arikawa",
         image: "/src/assets/theTravelingCatChronicles.jpg",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        tags: ["Poetry", "Classic", "Literature"],
-        category: "poetry"
+        description: ["Aku adalah seekor kucing.",
+            "Dia adalah seorang pemuda penyuka kucing.",
+            "“Kau selalu tidur di sini?”",
+            "Kenapa mau protes?",
+            "“Manisnya ....”",
+            "Memang. Banyak yang bilang begitu.",
+            "“Boleh ku sentuh ?”",
+            "Maaf saja, tidak boleh.",
+
+            "Kukira dia hanya akan jadi satu dari sekian banyak orang yang cuma lewat dalam kehidupanku sebagai kucing liar.",
+            "Akan tetapi, dia menyelamatkan nyawaku.",
+            "Sebagai gantinya, aku biarkan dia memeliharaku,",
+            "Karena aku kucing yang manis.",
+
+            "Setelah lima tahun kami bersama,",
+            "Satoru harus mencari orang untuk mengadopsiku",
+            "Karena satu dan lain hal.",
+
+            "Maka, kami berdua pun memulai sebuah perjalanan panjang mengendarai mobil wagon perak kesukaanku ke berbagai penjuru negeri untuk menemui teman-teman lama Satoru.",
+
+            "Akan tetapi, ada satu hal yang Satoru sembunyikan dariku...."
+        ],
+        tags: ["Slice-Of-Life", "Family", "Adventure"],
+        category: "fiction"
     },
     {
         id: 4,
-        title: "Six Of Crows",
-        author: "Leigh Bardugo",
-        image: "/src/assets/sixOfCrows.jpg",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        tags: ["Design", "Architecture", "Business"],
-        category: "design"
-    }
+        title: "As long As the Lemon Trees Grow",
+        author: "Zoulfa Katouh",
+        image: "/src/assets/LemonTree.jpg",
+        description: ["A year ago, before the revolution, Salama watched her brother marry her best friend, Layla, and wondered when her own love story might begin. Now she works at the hospital – helping those she can, closing the eyes of those she can't. Layla and her unborn baby are all Salama has left.",
+            "Unless you count Khawf. But he's a hallucination; a symptom of the horrors she's seen. Every day he urges Salama to leave. Every day she refuses.",
+            "Until she crosses paths with Kenan, the boy with the vivid green eyes, who wants to stay and risk his life for everything Syria could be …"],
+        tags: ["Historical", "Romance", "Inspirable"],
+        category: "fiction"
+    },
+    {
+        id: 5,
+        title: "Keajaiban Toko Kelontong Namiya",
+        author: "Keigo Higashino",
+        image: "/src/assets/TokoKelontongNamiya.jpg",
+        description: ["Ketika tiga pemuda berandal bersembunyi di toko kelontong tak berpenghuni setelah melakukan pencurian, sepucuk surat misterius mendadak diselipkan ke dalam toko melalui lubang surat.",
+            "Surat yang berisi permintaan saran. Sungguh aneh.",
+            "Namun, surat aneh itu ternyata membawa mereka dalam petualangan melintasi waktu, menggantikan peran kakek pemilik toko kelontong yang menghabiskan tahun-tahun terakhirnya memberikan nasihat tulus kepada orang-orang yang meminta bantuan.",
+            "Hanya untuk satu malam.",
+            "Dan saat fajar menjelang, hidup ketiga sahabat itu tidak akan pernah sama lagi.."],
+        tags: ["Fantasy", "Mystery", "Magical"],
+        category: "fiction"
+    },
+    {
+        id: 6,
+        title: "The Midnight Library",
+        author: "Matt Haig",
+        image: "/src/assets/MidnightLibrary.jpg",
+        description: ["Di antara kehidupan dan kematian terdapat sebuah perpustakaan yang jumlah bukunya tak terhingga. Tiap-tiap buku menyediakan satu kesempatan untuk mencoba kehidupan lain yang bisa dijalani sehingga kau bisa melihat apa yang terjadi kalau kau mengambil keputusan-keputusan berbeda... Akankah kau melakukan apa pun secara berbeda jika kau mendapat kesempatan untuk membatalkan penyesalan-penyesalanmu? Benarkah kehidupan lain akan jauh lebih baik?",
+            "Nora Seed harus membuat keputusan. Ia dihadapkan pada kemungkinan bisa mengubah hidupnya, memiliki karier yang berbeda, tidak putus dari mantan kekasih, dan mewujudkan mimpinya sebagai glasiolog. Ia menjelajahi Perpustakaan Tengah Malam untuk memutuskan apa sebenarnya yang menjadikan hidup pantas dijalani. Setelah kehidupan yang diisi berbagai penyesalan dan kegagalan, akankah Nora Seed akhirnya mendapatkan kehidupan yang bisa memberinya kebahagiaan sejati?"],
+        tags: ["Fantasy", "Slice-Of-Life", "Magical"],
+        category: "fiction"
+    },
+    {
+        id: 7,
+        title: "Atomic Habits",
+        author: "James Clear",
+        image: "/src/assets/AtomicHabits.jpg",
+        description: ["Orang mengira ketika Anda ingin mengubah hidup, Anda perlu memikirkan hal-hal besar. Namun pakar kebiasaan terkenal kelas dunia James Clear telah menemukan sebuah cara lain. Ia tahu bahwa perubahan nyata berasal dari efek gabungan ratusan keputusan kecil—dari mengerjakan dua push-up sehari, bangun lima menit lebih awal, sampai menahan sebentar hasrat untuk menelepon. Ia menyebut semua tadi atomic habits.",
+            "Dalam buku terobosan ini, Clear pada hakikatnya mengungkapkan bagaimana perubahan-perubahan sangat remeh ini dapat tumbuh menjadi hasil-hasil yang sangat mengubah hidup. Ia menyingkap beberapa trik sederhana dalam hidup kita (seni Menumpuk Kebiasaan yang terlupakan, kekuatan tak terduga Aturan Dua Menit, atau trik untuk masuk ke dalam Zona Goldilocks), dan menggali ke dalam teori psikologi dan neurosains paling baru untuk menerangkan mengapa semua itu penting. Dalam rangka itu, ia menceritakan kisah-kisah inspiratif para peraih medali emas Olimpiade, para CEO terkemuka, dan ilmuwan-ilmuwan istimewa yang telah menggunakan sains tentang kebiasaan-kebiasaan kecil untuk tetap produktif, tetap termotivasi, dan bahagia.",  
+            "Perubahan-perubahan kecil ini akan mendatangkan pengaruh revolusioner pada karier Anda, hubungan pribadi Anda, dan hidup Anda."],
+        tags: ["Inspirable", "Self Help", "Productivity"],
+        category: "non-fiction"
+    },
+    {
+        id: 8,
+        title: "Filosofi Teras",
+        author: "Henry Manampiring",
+        image: "/src/assets/FilosofiTeras.jpg",
+        description: ["Apakah kamu sering merasa khawatir akan banyak hal? baperan? susah move-on? mudah tersinggung dan marah-marah di social media maupun dunia nyata?",
+            "Lebih dari 2.000 tahun lalu, sebuah mazhab filsafat menemukan akar masalah dan juga solusi dari banyak emosi negatif. Stoisisme, atau Filosofi Teras, adalah filsafat Yunani-Romawi kuno yang bisa membantu kita mengatasi emosi negatif dan menghasilkan mental yang tangguh dalam menghadapi naik-turunnya kehidupan. Jauh dari kesan filsafat sebagai topik berat dan mengawang-awang, Filosofi Teras justru bersifat praktis dan relevan dengan kehidupan Generasi Milenial dan Gen-Z masa kini."],
+        tags: ["Inspirable", "Philosophy", "Psychology"],
+        category: "non-fiction"
+    },
+    {
+        id: 9,
+        title: "The Alpha Girl's Guide",
+        author: "Henry Manampiring",
+        image: "/src/assets/AlphaGirl.jpg",
+        description: ["Alpha Female adalah para perempuan yang menginspirasi, memimpin, menggerakkan orang sekitarnya, dan membawa perubahan. Mereka cerdas, percaya diri, dan independen. Bagaimana remaja dan perempuan muda bisa mengembangkan diri menjadi mereka? The Alpha Girl’s Guide akan membahas tips-tipsnya, seperti:",
+            "- Mana yang lebih penting, nilai atau pengalaman berorganisasi?",
+            "- Apakah teman kamu teman sejati atau teman yang menghambat?",
+            "- Bagaimana mengetahui cowok parasit dan manipulatif?",
+            "- Bagaimana bersikap saat patah hati?",
+            "- Apakah kamu akan menikah untuk alasan yang tepat?",
+            "- Apa yang penting dilakukan saat memulai bekerja?",
+            "Buku ini adalah hasil pengamatan, riset artikel, wawancara langsung, dan diskusi dengan banyak perempuan di media sosial Ask.fm. Ditulis dengan ringan, penuh ilustrasi kocak, tetapi tetap blak-blakan menohok, The Alpha Girl’s Guide akan membuat kamu terinspirasi menjadi cewek smart, independen dan bebas galau!",
+            "Buku ini juga berisi wawancara inspiratif dengan dua Alpha Female Indonesia dari dua generasi: Najwa Shihab dan Alanda Kariza."],
+        tags: ["Inspirable", "Woman", "Self Help"],
+        category: "non-fiction"
+    },
+    {
+        id: 10,
+        title: "Insecurity is My Middle Name",
+        author: "Alvi Syahrin",
+        image: "/src/assets/Insecure.jpg",
+        description: ["isi buku:",
+            "1. Kenapa good-looking yang selalu dipilih?",
+            "2. Lalu, siapa yang akan memilihku?",
+            "3. Aku juga kayaknya nggak bisa apa-apa, deh.",
+            "4. Skill apa, ya, yang cocok buat aku?",
+            "5. Tapi aku harus mulai dari mana, ya?",
+            "6. Aku bukan malas, hanya takut gagal lagi.",
+            "7. Dan, aku malu, belum bisa banggain orangtua.",
+            "8. Dan, aku kalah jauh dari teman-temanku.",
+            "9. Jujur aku iri sama pencapaian mereka.",
+            "10. Nggak ada yang bisa dibanggakan dariku.", 
+            "tapi, di sinilah kamu, menyentuh buku ini, trying to feel something, trying to be something, dan kamu sudah ada di langkah yang tepat, karena di buku ini ada 45 bab yang membantumu berdamai dengan insecurity-mu."],
+        tags: ["Inspirable", "Psychology", "Self Help"],
+        category: "non-fiction"
+    },
+    {
+        id: 11,
+        title: "Things Left Behind: Hal-hal yang Kita Pelajari dari Mereka yang Telah Tiada",
+        author: "Kim Sae-Byoul",
+        image: "/src/assets/ThingsLeftBehind.jpg",
+        description: ["Buku ini mengungkap beragam kisah nyata di balik kematian yang diceritakan oleh seorang pengurus barang-barang peninggalan orang yang sudah meninggal, baik yang meninggal karena sebab natural maupun tidak—misalnya pembunuhan atau bunuh diri. Saat diminta membersihkan barang milik orang yang telah meninggal, terkadang ditemui kasus-kasus mengejutkan, seperti orang tua yang meninggal tanpa diketahui orang lain dan jenazahnya baru ditemukan berminggu-minggu kemudian.",
+            "Ditulis dengan jernih dan menyentuh, buku yang mengilhami K-drama Move to Heaven ini menggabungkan pengalaman pribadi dan renungan personal dengan bahasa yang mengalir dan enak dibaca.",
+            "Inilah buku menarik yang akan membuat pembaca menangis terharu, sekaligus menyadarkan kita akan hal-hal penting yang selama ini luput dari perhatian, antara lain betapa berharganya kehidupan, keluarga, kasih sayang, dan persahabatan."],
+        tags: ["Slice-of-Life", "Family", "Self Help"],
+        category: "non-fiction"
+    },
+    {
+        id: 12,
+        title: "Panduan Optimalisasi AI untuk Digital Marketing",
+        author: "Su Rahman",
+        image: "/src/assets/edu1.png",
+        description: ["teknologi digital dengan lebih cepat.",
+            "Buku ini membahas tentang rahasia pemanfaatan teknologi AI untuk optimalisasi kebutuhan digital marketing dan konten website. Ada tiga AI yang digunakan dalam buku ini, dan ketiganya bisa saling membantu untuk menyelesaikan pekerjaan sehari-hari, yaitu: ChatGPT, Google Gemini, dan Microsoft CoPilot. Panduan di dalam buku ini dikemas secara komprehensif, sehingga bisa memberikan pemahaman yang mendalam tentang trik untuk menggunakan AI bagi digital marketer dan pengembang web.",
+            "Dalam buku ini pembaca akan mengetahui cara mengoptimalkan dan memaksimalkan AI untuk kebutuhan digital marketing dan konten website, di mana pembaca akan tahu cara menggunakan Prompt AI dan melakukan Engineering Prompt AI untuk mengoptimalkan hasil pekerjaan. Pembaca juga akan dapat mengembangkan dan memodifikasi Prompt tersebut untuk kebutuhan yang berbeda. Semua panduannya disajikan langkah demi langkah dalam bahasa sederhana."],
+        tags: ["Technology", "Digital Marketing", "AI"],
+        category: "education"
+    },
+    {
+        id: 13,
+        title: "Logika dan Struktur Diskret",
+        author: "Ahmad Muklason, Eko Wahyu Tyas, Amalia Utamima, Laode Shaldan Falih",
+        image: "/src/assets/edu2.png",
+        description: ["Buku Logika dan Struktur Diskret memberikan pengenalan komprehensif terhadap konsep dasar logika dan struktur diskrit, yang sangat penting untuk memahami berbagai aspek ilmu komputer, sistem informasi, dan teknologi. Buku ini membahas prinsip-prinsip logika proposisional dan predikat, kesetaraan logika, serta teknik pembuktian, dengan menawarkan wawasan teoritis dan aplikasi praktis. Selain itu, buku ini juga mendalami struktur diskret seperti himpunan, graf, dan relasi, serta mengeksplorasi perannya dalam pemecahan masalah dan pengambilan keputusan di bidang pemrograman ataupun perancangan sistem.",
+            "Dengan penjelasan yang mendetail, disertai contoh dan latihan, buku ini menjadi sumber daya yang sangat berharga bagi pelajar dan profesional yang ingin memperkuat keterampilan berpikir kritis, analitis, dan sistematis, yang sangat dibutuhkan di bidang ilmu komputer dan teknologi informasi."],
+        tags: ["Technology", "Computer Science", "Mathematics"],
+        category: "education"
+    },
+    {
+        id: 14,
+        title: "Belajar Cepat Database NoSQL",
+        author: "Agit Amrullah, Kusnawi",
+        image: "/src/assets/edu3.png",
+        description: ["Buku Belajar Cepat Database NoSQL: Menggunakan Document Oriented Database (MongoDB) pada Pengaplikasian Big Data ini dibuat karena pentingnya perkembangan Big Data dan pemahaman akan konsep bentuk non-relational database yang semakin berkembang dan dibutuhkan di berbagai hal dan lini bisnis. Selain itu, konsep infrastruktur Big Data yang semakin berkembang membuat kebutuhan akan pemahaman terhadap infrastruktur dan mekanisme bagaimana Big Data dapat dibangun dari awal atau bermigrasi dari relational ke bentuk non relational. Untuk mempermudah pemahaman, buku ini diuraikan ke dalam bentuk rangkuman capaian pembelajaran, kebutuhan fungsional dan nonfungsional, serta contoh penerapan kasus sehingga mempermudah pembaca dalam memahami.",
+            "Pada Era Teknologi Revolusi Industri 4.0, begitu banyak keuntungan dalam jangka panjang yang dapat diambil dalam bidang digitalisasi dengan berbagai fenomena tentang Big Data dan loT. Dalam Revolusi Industri 4.0, setidaknya ada lima teknologi yang menjadi pilar utama dalam mengembangkan sebuah industri digital, yaitu: Internet of Things, Big Data, Artificial Intelligence, Cloud Computing, dan Additive Manufacturing.",
+            "Database NoSQL dibuat dengan tujuan khusus untuk model data spesifik dan memiliki skema fleksibel untuk membuat aplikasi modern. Database NoSQL dikenal secara luas karena kemudahan pengembangan, fungsionalitas, dan kinerja dalam berbagai skala, dan dalam era Big Data tentunya sangat mendukung dalam proses database modern dan aplikasi turunannya."],
+        tags: ["Technology", "Database", "Big Data"],
+        category: "education"
+    },
+    {
+        id: 15,
+        title: "Data Science Menggunakan Bahasa R : Deep Learning",
+        author: "Dr. Adi Nugroho, S.T., M.M.S.I.",
+        image: "/src/assets/edu4.png",
+        description: ["Data Science merupakan suatu bidang ilmu yang (relatif) baru di Indonesia, tujuan utamanya adalah memahami dan menganalisis segala fenomena yang berkaitan dengan data yang bertipe terstruktur, semiterstruktur, serta tidak terstruktur, yang datang dari berbagai sumber data/data source yang sangat beragam (meskipun saat ini sumber data yang terutama berasal dari Big Data dan loT/Internet of Things) menggunakan pengetahuan yang terutama matematika, statistika, ilmu informasi (information science), serta ilmu komputer (terutama kecerdasan buatan/AI-Artificial Intelligence).",
+            "Mckinsey & Company pada 2018 melakukan survei tentang berapa sesungguhnya kebutuhan Data Scientist di Amerika Serikat pada tahun itu dan hasilnya menunjukkan bahwa dibutuhkan sekitar 140.000-190.000 Data Scientist (peningkatan sekitar 6,5 kali lipat dibandingkan tahun sebelumnya). Dalam hal ini kita juga bisa memperkirakan bahwa kebutuhan Data Scientist di Indonesia dalam beberapa tahun mendatang juga akan sangat tinggi (terutama jika kita mengingat salah satu kebijakan ekonomi pemerintah Indonesia saat ini, yang pada tahun-tahun mendatang akan lebih fokus pada berbagai bentuk perekonomian digital, seperti perdagangan barang dan jasa melalui jaringan internet atau e-commerce).",
+            "Dengan demikian, buku yang berjudul Data Science Menggunakan Bahasa R: Deep Learning ini diharapkan akan memberi pemahaman tentang beberapa metode Data Science/Deep Learning yang paling sering digunakan oleh seorang Data Scientist untuk melakukan berbagai analisis data (data analytics) kepada kalangan akademisi, para mahasiswa di jurusan-jurusan yang terkait dengan ilmu komputer atau informatika, dan pada para praktisi di seluruh Indonesia."],
+        tags: ["Technology", "Data Science", "Deep Learning"],
+        category: "education"
+    },
+    {
+        id: 16,
+        title: "It Ends with Us",
+        author: "Colleen Hoover",
+        image: "/src/assets/ITWU.jpg",
+        description: ["Lily hasn’t always had it easy, but that’s never stopped her from working hard for the life she wants. She’s come a long way from the small town where she grew up—she graduated from college, moved to Boston, and started her own business. And when she feels a spark with a gorgeous neurosurgeon named Ryle Kincaid, everything in Lily’s life seems too good to be true.",
+            "Ryle is assertive, stubborn, maybe even a little arrogant. He’s also sensitive, brilliant, and has a total soft spot for Lily. And the way he looks in scrubs certainly doesn’t hurt. Lily can’t get him out of her head. But Ryle’s complete aversion to relationships is disturbing. Even as Lily finds herself becoming the exception to his “no dating” rule, she can’t help but wonder what made him that way in the first place.",
+            "As questions about her new relationship overwhelm her, so do thoughts of Atlas Corrigan—her first love and a link to the past she left behind. He was her kindred spirit, her protector. When Atlas suddenly reappears, everything Lily has built with Ryle is threatened."],
+        tags: ["Romance", "Family", "Adult"],
+        category: "fiction"
+    },
   ]

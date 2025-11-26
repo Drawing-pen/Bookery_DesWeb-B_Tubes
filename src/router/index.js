@@ -8,22 +8,27 @@ import AboutUsPage from "../pages/AboutUsPage.vue";
 const routes = [
     {
         path: '/',
+        name: 'Home',
         component: HomePage
     },
     {
         path: '/menu',
+        name: 'Menu',
         component: MenuPage
     },
     {
         path: '/library',
+        name: 'Library',
         component: LibraryPage
     },
     {
         path: '/store',
+        name: 'Store',
         component: StorePage
     },
     {
         path: '/about',
+        name: 'About',
         component: AboutUsPage
     },
 ]
