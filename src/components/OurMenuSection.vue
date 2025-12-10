@@ -1,7 +1,8 @@
 <template>
     <section class="py-12 md:py-16 px-4 md:px-8 bg-coklat">
         <div class="max-w-7xl mx-auto">
-            <h2 class="font-meriweter text-2xl md:text-3xl font-bold text-krem mb-8 pb-2 border-b-2 border-krem block w-full">
+            <h2 class="font-meriweter gap-2 md:gap-3 text-2xl md:text-3xl font-bold text-krem mb-8 pb-2 border-b-2 border-krem flex items-center w-full">
+                <span class="icon-[icon-park-solid--bread]" style="width: 30px; height: 30px; color: #EAE7dd;"></span>
                 Our Menu
             </h2>
 
@@ -73,6 +74,14 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="flex justify-center mt-8">
+                <router-link
+                to="/menu"
+                class="font-gupter inline-block text-krem font-bold duration-300 text-xl md:text-xl hover:underline"
+                >
+                See more
+                </router-link>
             </div>
         </div>
     </section>

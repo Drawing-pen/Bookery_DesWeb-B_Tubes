@@ -1,8 +1,10 @@
 <template>
     <div class="bg-krem min-h-screen overflow-x-hidden w-screen">
         <div class="px-4 md:px-8 pt-8 pb-12">
-            <h1 class="font-meriweter text-2xl md:text-3xl lg:text-4xl font-bold text-coklat">
+            <h1 class="font-meriweter text-2xl md:text-3xl lg:text-4xl font-bold text-coklat flex items-center gap-2 md:gap-3">
+                <span class="icon-[ion--library]" style="width: 30px; height: 30px; color: #514F46;"></span>
                 Books Catalog
+                <span class="flex-1 border-b-2 border-coklat ml-2 md:ml-3"></span>
             </h1>
         </div>
 

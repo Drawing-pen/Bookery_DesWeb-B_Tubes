@@ -9,12 +9,25 @@
             <p class="text-xl md:text-2xl lg:text-2xl mb-6 font-gupter">
                 Where great coffee meets great stories
             </p>
-            <router-link
-            to="/menu"
-            class="font-gupter inline-block bg-krem text-coklat px-6 md:px-8 py-2.5 md:py-3 rounded-full font-semibold hover:bg-coklat hover:text-krem hover:shadow-lg transition-all duration-300"
+            <button
+                @click="scrollToSection"
+                class="font-gupter inline-block bg-krem text-coklat px-6 md:px-8 py-2.5 md:py-3 rounded-full font-semibold hover:bg-coklat hover:text-krem hover:shadow-lg cursor-pointer transition-all duration-300"
             >
                 Explore Menu
-            </router-link>
+            </button>
         </div>
     </section>
+        <section id="menu-section" class="...">
+    </section>
 </template>
+
+<script>
+export default {
+    methods: {
+        scrollToSection() {
+            const section = document.getElementById('menu-section');
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+}
+</script>

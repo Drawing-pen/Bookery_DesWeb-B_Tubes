@@ -1,9 +1,8 @@
 <template>
     <section class="py-12 md:py-16 px-4 md:px-8 overflow-hidden">
         <div class="max-w-7xl mx-auto">
-            <h2
-                class="font-meriweter text-coklat text-2xl md:text-3xl font-bold mb-6 pb-2 border-b-2 border-coklat block w-full text-left"
-            >
+            <h2 class="font-meriweter gap-2 md:gap-3 text-coklat text-2xl md:text-3xl font-bold mb-6 pb-2 border-b-2 border-coklat flex items-center w-full text-left">
+                <span class="icon-[ion--library]" style="width: 30px; height: 30px; color: #514f46;"></span>
                 Our Library
             </h2>
 
@@ -51,6 +50,18 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div
+                            v-if="isLastSlide"
+                            class="w-52 sm:w-60 md:w-72 bg-krem overflow-hidden  shrink-0 p-4 sm:p-6 flex items-center justify-center"
+                        >
+                            <router-link
+                                to="/Library"
+                                class="font-gupter inline-flex items-center justify-center bg-coklat text-krem px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold hover:bg-[#3d3a31] hover:scale-105 hover:shadow-lg transition-all duration-300 text-center"
+                            >
+                                Explore Library
+                            </router-link>
+                        </div>
                     </div>
                 </div>
 
@@ -67,7 +78,7 @@
             </div>
 
             <!-- Carousel Dots -->
-            <div class="flex justify-center gap-2 mt-6 min-h-[15px] items-center">
+            <div class="flex justify-center gap-2 mt-6 min-h-[15px] items-center cursor-pointer">
                 <button
                     v-for="(slide, index) in totalSlides"
                     :key="index"
@@ -94,15 +105,19 @@
             const currentSlide = ref(0);
             const booksPerPage = ref(3);
 
-            const books = booksData.slice(0,6);
+            const books = booksData.slice(0, 5);
 
             const updateBooksPerPage = () => {
-                if (window.innerWidth < 640) {
+                if (window.innerWidth < 768) {
                     booksPerPage.value = 1;
                 } else if (window.innerWidth < 1024) {
                     booksPerPage.value = 2;
                 } else {
                     booksPerPage.value = 3;
+                }
+                
+                if (currentSlide.value >= Math.ceil(books.length / booksPerPage.value)) {
+                    currentSlide.value = 0;
                 }
             };
 
@@ -114,6 +129,10 @@
                 const start = currentSlide.value * booksPerPage.value;
                 const end = start + booksPerPage.value;
                 return books.slice(start, end);
+            });
+
+            const isLastSlide = computed(() => {
+                return currentSlide.value === totalSlides.value - 1;
             });
 
             const nextSlide = () => {
@@ -132,10 +151,20 @@
                 router.push({ path: '/Library', query: { id: bookId } });
             };
 
+            onMounted(() => {
+                updateBooksPerPage();
+                window.addEventListener('resize', updateBooksPerPage);
+            });
+
+            onUnmounted(() => {
+                window.removeEventListener('resize', updateBooksPerPage);
+            });
+
             return {
                 booksToShow,
                 currentSlide,
                 totalSlides,
+                isLastSlide,
                 nextSlide,
                 prevSlide,
                 goToBook

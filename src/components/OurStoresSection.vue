@@ -1,7 +1,8 @@
 <template>
     <section class="py-12 md:py-16 px-4 md:px-8">
         <div class="max-w-7xl mx-auto">
-            <h2 class="font-meriweter text-2xl md:text-3xl font-bold text-coklat mb-8 pb-2 border-b-2 border-coklat block w-full">
+            <h2 class="font-meriweter gap-2 md:gap-3 text-2xl md:text-3xl font-bold text-coklat mb-8 pb-2 border-b-2 border-coklat flex w-full">
+                <span class="icon-[streamline--store-1-solid]" style="width: 30px; height: 30px; color: #514F46;"></span>
                 Our Stores
             </h2>
             <div class="space-y-6 mt-8 max-w-full md:max-w-none w-full pl-4 md:pl-0 ">

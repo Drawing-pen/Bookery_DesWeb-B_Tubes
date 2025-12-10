@@ -2,6 +2,7 @@
     <header class="bg-coklat sticky top-0 z-50 px-4 md:px-6 py-3">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
         <div class="flex items-center gap-2">
+
         <!-- Mobile + Tab setting -->
         <button 
             @click="toggleMenu" 
@@ -10,6 +11,7 @@
         >
         <span class="icon-[ci--hamburger-lg] hover:scale-110 transition-transform" style="width: 30px; height: 25px; color: #EAE7DD;"></span>
         </button>
+
         <!-- Logo -->
         <router-link to="/" class="flex items-center text-krem no-underline font-bold font-gupter md:text-xl">
             <div class="mr-2 flex items-center hover:scale-105 transition-transform">
@@ -18,6 +20,7 @@
             </div>
         </router-link>
         </div>
+
         <!-- NavBar Desktop -->
         <nav class="hidden lg:block">
             <ul class="flex list-none gap-6 items-center m-0 p-0">
@@ -68,6 +71,7 @@
             </li>
             </ul>
         </nav>
+        
         <!-- Social Icons -->
         <div class="flex gap-3">
             <a

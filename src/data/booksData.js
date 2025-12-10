@@ -161,7 +161,7 @@ export const books = [
         description: ["Buku ini mengungkap beragam kisah nyata di balik kematian yang diceritakan oleh seorang pengurus barang-barang peninggalan orang yang sudah meninggal, baik yang meninggal karena sebab natural maupun tidak—misalnya pembunuhan atau bunuh diri. Saat diminta membersihkan barang milik orang yang telah meninggal, terkadang ditemui kasus-kasus mengejutkan, seperti orang tua yang meninggal tanpa diketahui orang lain dan jenazahnya baru ditemukan berminggu-minggu kemudian.",
             "Ditulis dengan jernih dan menyentuh, buku yang mengilhami K-drama Move to Heaven ini menggabungkan pengalaman pribadi dan renungan personal dengan bahasa yang mengalir dan enak dibaca.",
             "Inilah buku menarik yang akan membuat pembaca menangis terharu, sekaligus menyadarkan kita akan hal-hal penting yang selama ini luput dari perhatian, antara lain betapa berharganya kehidupan, keluarga, kasih sayang, dan persahabatan."],
-        tags: ["Slice-of-Life", "Family", "Self Help"],
+        tags: ["Slicse-of-Life", "Family", "Self Help"],
         category: "non-fiction"
     },
     {

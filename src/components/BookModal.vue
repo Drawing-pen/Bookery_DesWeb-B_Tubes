@@ -30,7 +30,7 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-col justify-center space-y-3 md:space-y-4">
+                    <div class="flex flex-col justify-center space-y-3 md:space-y-4 text-justify">
                         <h2 class="font-meriweter text-2xl md:text-3xl lg:text-4xl font-bold text-coklat">
                             {{ item.title }}
                         </h2>

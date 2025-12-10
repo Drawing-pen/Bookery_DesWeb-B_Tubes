@@ -3,15 +3,12 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
                 <div class="text-krem">
-                <h2 class="font-meriweter text-2xl md:text-3xl font-bold mb-6 pb-2 border-b-2 border-krem block w-full">
+                <h2 class="font-meriweter gap-2 md:gap-3 text-2xl md:text-3xl font-bold mb-6 pb-2 border-b-2 border-krem flex w-full">
+                    <span class="icon-[streamline-plump--feather-pen-solid]" style="width: 30px; height: 30px; color: #EAE7DD;"></span>
                     Our Stories
                 </h2>
-                <p class="font-gupter mb-4 text-xl md:text-xl leading-relaxed">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <p class="font-gupter mb-6 text-xl md:text-xl leading-relaxed">
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <p class="font-gupter mb-4 text-xl md:text-xl leading-relaxed text-justify">
+                    Visitors can enjoy a wide selection of books available to borrow and read on-site, accompanied by a selection of bread and pastries made to complement your activities—whether working, studying, or simply simply escaping the hustle and bustle.
                 </p>
                 <router-link
                     to="/about"

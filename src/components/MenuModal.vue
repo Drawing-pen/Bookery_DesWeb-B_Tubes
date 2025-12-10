@@ -36,7 +36,7 @@
                         {{ item.price }}
                     </p>
 
-                    <p class="font-gupter text-xs md:text-sm lg:text-base text-coklat leading-relaxed">
+                    <p class="font-gupter text-xs md:text-sm lg:text-base text-coklat leading-relaxed text-justify">
                         {{ item.description || 'No description available.' }}
                     </p>
 
