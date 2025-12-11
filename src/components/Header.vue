@@ -69,6 +69,15 @@
                 About Us
                 </router-link>
             </li>
+            <li>
+                <router-link 
+                to="/me" 
+                class="text-krem no-underline px-4 py-2 rounded-full transition-all font-gupter hover:font-bold hover:bg-krem hover:text-coklat font-bold"
+                :class="{ 'bg-krem text-coklat! font-bold': $route.path === '/me' }"
+                >
+                About Me
+                </router-link>
+            </li>
             </ul>
         </nav>
         
@@ -174,6 +183,16 @@
                     @click="closeMenu"
                     >
                     About US
+                    </router-link>
+                </li>
+                <li>
+                    <router-link 
+                    to="/me" 
+                    class="block text-coklat no-underline px-4 py-3 hover:bg-coklat hover:text-krem transition-colors font-gupter font-bold"
+                    :class="{ 'bg-coklat text-krem font-bold': $route.path === '/me' }"
+                    @click="closeMenu"
+                    >
+                    About Me
                     </router-link>
                 </li>
                 </ul>

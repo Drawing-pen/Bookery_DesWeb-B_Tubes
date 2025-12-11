@@ -4,6 +4,7 @@ import MenuPage from "../pages/MenuPage.vue";
 import LibraryPage from "../pages/LibraryPage.vue";
 import StorePage from "../pages/StorePage.vue";
 import AboutUsPage from "../pages/AboutUsPage.vue";
+import AboutMe from "../pages/AboutMe.vue"
 
 const routes = [
     {
@@ -31,6 +32,11 @@ const routes = [
         name: 'About',
         component: AboutUsPage
     },
+    {
+        path: '/me',
+        name: 'Me',
+        component: AboutMe
+    }
 ]
 
 const router = createRouter({
